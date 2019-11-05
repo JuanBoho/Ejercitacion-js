@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dados</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700,900&display=swap" rel="stylesheet">
+    <link href="css/style.css" type="text/css" 
+    rel="stylesheet" media="">
+    <link href="css/normalize.css" type="text/css" rel="stylesheet" media="">
+</head>
+<body>
+    <header class="hero"> 
+      <h1>Números</h1>
+    </header>
+    <div class="internas-header">
+   
+     <div class="barra">  
+      <nav>
+        <a href="index.html">Información</a>
+        <a href="numeros.html">Números</a>
+        <a href="receta.html">Receta</a>
+        <a href="dados.html">Juego</a>
+      </nav>
+     </div>
+        
+    </div>
+
+   
+
+
+
+<section class="ejer01">
+   
+
+    <div class="botones-numeros contenedor">
+        
+        <input type="button" id="btn1" class="btn"  value="Ingresar Número" onclick="ingreso()">
+        
+        <div class="num-flex">
+
+        <div class="numeros-grilla">
+        <input type="button" id="btn2" class="btn"  value="Número menor" onclick="menor()" disabled>
+        <p id="respnum_uno"></p>
+        </div>
+        
+        <div class="numeros-grilla">
+        <input type="button" id="btn3" class="btn"  value="Número mayor" onclick="mayor()" disabled>
+        <p id="respnum_dos"></p>
+        </div>
+
+        <div class="numeros-grilla">
+        <input type="button" id="btn4" class="btn"  value="Divisor menor" onclick="divisor()" disabled>
+        <p id="respnum_tres"></p>
+        </div>
+
+        <div class="numeros-grilla">
+        <input type="button" id="btn5" class="btn"  value="Múltiplos del divisor" onclick="multiplos()" disabled>
+        <p id="respnum_cuatro"></p>
+        </div>
+
+        </div>
+
+        <input type="button" id="btn6" class="btn"  value="Reset" onclick="reset()" disabled>
+    </div>
+    
+  </section>
+        <footer class="footer"> 
+                <p class="copyright">Juan Bohórquez. 2019 &copy; </p>
+        </footer>
+
+        <script type="text/javascript" src="js/portfolio.js"></script>
+</body>
+</html>

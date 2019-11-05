@@ -1,0 +1,402 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*1rem=10px*/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    /*resize en box-sizing*/
+}
+body {
+    font-family: 'Muli', sans-serif;
+    background-color:#FEF5E7;
+}
+img{
+    max-width: 100%;
+}
+
+/**Utilidades**/
+.contenedor{
+    max-width: 1000px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.btn{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 3rem auto;
+    padding: .5rem 1rem;
+    height: 5vh;
+    border: 2px solid #D68910;
+    background-color: transparent;
+    border-radius: 40px;
+    color:#D68910;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color:#e6b86f;
+    border: 2px solid #e6b86f;
+}
+
+.btn:disabled{
+    color: grey;
+    border: 2px solid grey;
+}
+/**Header**/
+
+.site-header{
+    background-image: url(../img/maxresdefault.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    max-height: 50rem;
+}
+
+.internas-header{
+    height: 5vh;
+    background-color: #FEF5E7;
+}
+.barra{
+    display: flex;
+    justify-content: flex-end;
+    padding: .5rem 10rem 0 0;
+}
+.barra-index nav a{
+    color: #FEF5E7;
+}
+.contenedor-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+nav{
+    padding-top: 1rem;
+    text-align: center;
+}
+   
+nav a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #0e0e0e;
+    margin-right: 2rem;
+}
+nav a:hover{
+    color: #D68910;
+    filter:drop-shadow(16px 16px 10px #D68910);
+}
+.titulo-header{
+margin-top: 22rem;
+}
+
+.titulo-header h1{
+    padding-bottom: .5rem; 
+    margin: .5rem;
+}
+
+.titulo-header p{
+    text-align: center;
+    color: #D68910;
+    margin: .5rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.linea{
+    background-color: #ffffff;
+    width:40rem;
+    height: 0.1rem;
+}
+
+
+/**CONTENIDO**/
+
+/* Info Juan */
+
+.seccion-info{
+    background-color: rgba(214, 138, 16, 0.788);
+    height:0vh;
+    transition: height 1s;
+}
+
+.seccion-info:hover{
+    height: 60vh;
+}
+.contenido-info{
+    text-align: center;
+}
+.contenido-info h2{
+    color:#FEF5E7;
+    font-size: 1.8rem;
+}
+.info-img img{
+    margin-top: -7rem;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    /*border: .5rem solid #4d2119;*/
+}
+
+.contenido-info{
+    color: #FEF5E7;
+    font-size: 2rem;
+}
+
+.info-texto{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    margin-top: 8rem;
+}
+.icono p{
+    margin-top: 2rem;
+}
+/* Nav imágenes*/
+.contenido-portfolio{
+    margin: 12rem 0;
+    height: 40vh;
+
+}
+.internas{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    column-gap: 2rem;
+    
+}
+.internas a{
+    text-decoration: none;
+    color: #FEF5E7;
+}
+.index-numeros{
+    background-image: url(../img/numeros.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 70vh;
+    font-size: 3rem;
+    filter: none;
+    transition: .5s;
+}
+
+.index-numeros:hover{
+    filter: opacity(87%);
+    font-size: 6rem;
+}
+
+.index-receta{
+    background-image: url(../img/tortilla.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 70vh;
+    font-size: 3rem;
+    filter: none;
+    transition: .5s;
+}
+
+.index-receta:hover{
+    filter: opacity(87%);
+    font-size: 6rem;
+}
+
+.index-dados{
+    background-image: url(../img/dados2.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 70vh;
+    font-size: 3rem;
+    filter: none;
+    transition: .5s;
+}
+
+.index-dados:hover{
+    filter: opacity(87%);
+    font-size: 6rem;
+}
+
+.info-internas{
+    color: #FEF5E7;
+    text-align: center;
+    margin-top: 20rem;
+}
+
+/**********************************************/
+/** Números**/
+
+.hero{
+    background-image: url(../img/maxresdefault.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 30vh;
+    filter: opacity(95%);
+}
+
+.hero h1{
+    margin: 0 auto;
+    padding: 10vh;
+    font-size: 5rem;
+    color: #FEF5E7;
+    filter: none;
+}
+
+.ejer01{
+    background: #FEF5E7;
+}
+
+.botones-numeros{
+    padding-top: 4rem;
+    text-align: center;
+}
+
+.num-flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+.num-flex p{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.numeros-grilla p{
+    color: #D68910;
+}
+
+/**********************************************/
+/** Receta **/
+
+.hero-receta h1{
+    margin: 0 auto;
+    padding: 10vh;
+    font-size: 5rem;
+    color: #FEF5E7;
+    filter: none;
+}
+
+.ejer02{
+    background: #FEF5E7;
+}
+.ejer02 h1{
+    margin: 0 auto;
+    padding-bottom: 8rem;
+    padding-top: 5vh;
+    color: #D68910;
+    font-size: 3rem;
+}
+
+.receta-columns{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    column-gap: 2rem; 
+    font-size: 2rem;
+    background-color:#FEF5E7;  
+}
+.receta-info{
+    color: #0e0e0e;
+    text-align: justify;
+}
+
+
+.receta-calc{
+    text-align: center;
+}
+#mensaje{
+    font-size: 3rem; 
+}
+.columnas-calc{
+    display: grid;
+    grid-template-columns: 50% 50%; 
+}
+.labels{
+    display: grid;
+}
+/**********************************************/
+/*Juego*/
+
+.hero-dados h1{
+    margin: 0 auto;
+    padding: 10vh;
+    font-size: 5rem;
+    color: #FEF5E7;
+    filter: none;
+}
+
+.ejer03{
+    background-color: #0e0e0e;
+}
+.ejer03 h1{
+    background-color: #FEF5E7;
+    color: #D68910;
+    font-size: 3rem;
+    margin: 0;
+    padding: 3rem;
+}
+.tablero{
+    background-image: url(../img/paño.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 1rem auto;
+}
+.juego{
+    text-align: center;
+    color: #D68910;
+}
+.columnas-juego{
+    display: grid;
+    grid-template-columns: 30% 40% 30%; 
+    font-size: 3rem;
+}
+.tiros{
+    font-size: 2rem;
+}
+.dados{
+    display: grid;
+    justify-content: center;
+    padding-top: 4rem;
+}
+.set-juego{
+    text-align: center;   
+}
+
+.set-juego p{
+    color:#D68910;
+    font-size: 1.4rem;
+}
+.comentario{
+    font-size: 1.4rem;
+    text-align: justify;
+}
+/*Footer*/
+.site-footer{
+    margin: 30rem 0 0 0;
+}
+
+.footer{
+    margin:10rem 0 0 0;
+}
+.copyright{
+    margin: 0 auto;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #D68910;
+}
+.site-copyright{
+    margin: 0 auto;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #0c0c0c;
+}
+/*** EN INFO CAMBIAR COLOR DE H2 y SVG´S A: #4d2119
+hacer borde y linea, tamaño h2 y ubica parrafos***/

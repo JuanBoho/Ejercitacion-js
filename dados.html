@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700,900&display=swap" rel="stylesheet">
+    <link href="css/style.css" type="text/css" 
+    rel="stylesheet" media="">
+    <link href="css/normalize.css" type="text/css" rel="stylesheet" media="">
+</head>
+<body>
+    <header class="hero"> 
+        <h1>Dados</h1>
+      </header>
+      <div class="internas-header">
+     
+       <div class="barra">  
+        <nav>
+          <a href="index.html">Información</a>
+          <a href="numeros.html">Números</a>
+          <a href="receta.html">Receta</a>
+          <a href="dados.html">Juego</a>
+        </nav>
+       </div>
+          
+      </div>
+       
+    <section class="ejer03">
+       
+      <h1>Juego de dados</h1>
+     <div class="tablero contenedor">
+
+       <div class="juego">
+      <div class="columnas-juego"> 
+    
+        <div id="jugador_uno" class="jugador">
+          <h2>Jugador 1</h2>
+          <input type="button" id="lanzar_uno" class="btn"  value="Lanzar" onclick="lanzar(1)" disabled>
+          <p class="tiros">Puntaje tiro:</p>
+          <p id="puntajetiro_1"></p>
+          <p class="tiros">Tiros restantes:</p>
+          <p id="tiros_1"></p>
+          <p class="tiros">Puntos ronda:</p>
+          <p id="puntajeronda_1"></p>
+          <p class="tiros">Acumulado:</p>
+          <p id="puntajeacumulado_1"></p>
+        </div>
+       
+    
+        <div id="imagenes" class="dados">
+          <img src="" id="dado1">
+          <img src="" id="dado2">
+          <img src="" id="dado3">
+          <img src="" id="dado4">
+          <img src="" id="dado5">
+        </div>
+    
+
+        <div id="jugador_dos" class="jugador">
+          <h2>Jugador 2</h2>
+          <input type="button" id="lanzar_dos" class="btn"  value="Lanzar" onclick="lanzar(2)" disabled>
+          <p class="tiros">Puntaje tiro:</p>
+          <p id="puntajetiro_2" class="respu"></p>
+          <p class="tiros">Tiros restantes:</p>
+          <p id="tiros_2" class="respu"></p>
+          <p class="tiros">Puntos ronda:</p>
+          <p id="puntajeronda_2" class="respu"></p>
+          <p class="tiros">Acumulado:</p>
+          <p id="puntajeacumulado_2"></p>
+        </div>
+       </div>
+     
+       </div> <!--Cierra juego-->
+
+       <div class="set-juego">
+
+      <button id="inicio_ronda" class="btn" onclick="ronda()">Jugar</button>
+      <p id="rondas"></p>
+      
+         
+      <div id="desempate" style="display: none">
+        <h2>DESEMPATE</h2>
+           <input type="button" id="desempate_uno" class="btn"  value="Jugador Uno" onclick="desempate(1)" disabled>
+           <input type="button" id="desempate_dos" class="btn"  value="Jugador Dos" onclick="desempate(2)" disabled>
+           <h3 id="resultado"></h3>
+      </div>
+      
+       <input type="button" id="btn6" class="btn"  value="Reset" onclick="location.reload()">
+
+       </div> <!--Cierra set-juego-->
+    
+    
+     </div> <!--Cierra tablero-->
+
+    </section>
+
+      <div class="comentario contenedor">
+        <h3><b>NOTA:</b></h3>
+        <p>Para el el desarollo de este ejercicio, se usaron cuatro funciones:</p>
+        <p><b>Función lanzar:</b> Esta se encarga de sortear el tiro de cada jugador. Primero genera tres valores aleatorios correspondiente a los dados, les evalúa para determinar puntaje del tiro, de ronda y acumulados de la partida, así mismo evalúa a que jugador corresponden y les imprime en pantalla conforme avanza el juego.</p>
+
+        <p><b>Función Ronda:</b> El objeto de esta función es inicializar cada ronda del juego. Determina las rondas restantes, limpia resultados de la ronda anterior, desabilita o habilita botones según corresponda y por último evalúa el ganador o el posible empate en primera instancia.</p>
+
+        <p><b>Función desempate:</b> Esta habilita una nueva instancia del juego en caso de presentarse un empate. Da la posibilidad de ejecutar un tiro adicional por jugador para establecer el ganador del juego.</p>
+
+        <p><b>Función resultado:</b> En base a los puntajes obtenidos en la ronda de desempate, esta función indica el ganador del juego, o en caso de presentarse un nuevo empate, habilita de nuevo el tiro adicional.</p>
+      </div>
+
+        <footer class="footer"> 
+                <p class="copyright">Juan Bohórquez. 2019 &copy; </p>
+        </footer>
+
+        <script type="text/javascript" src="js/portfolio.js"></script>
+</body>
+</html>

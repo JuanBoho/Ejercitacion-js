@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Receta</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700,900&display=swap" rel="stylesheet">
+    <link href="css/style.css" type="text/css" 
+    rel="stylesheet" media="">
+    <link href="css/normalize.css" type="text/css" rel="stylesheet" media="">
+</head>
+<body>
+
+    <header class="hero"> 
+        <h1>Receta</h1>
+      </header>
+      <div class="internas-header">
+     
+       <div class="barra">  
+        <nav>
+          <a href="index.html">Información</a>
+          <a href="numeros.html">Números</a>
+          <a href="receta.html">Receta</a>
+          <a href="dados.html">Juego</a>
+        </nav>
+       </div>
+          
+      </div>
+
+<section class="ejer02">
+
+  <h1>Tortilla de papas</h1>
+   
+  <div class="receta-columns contenedor ">
+    <div class="receta-info">
+      
+      <div class="receta-img">
+        <img src="img/tortilla.jpg">
+      </div>
+      
+      <div class="receta-texto">
+      <p>Ingredientes: </p>
+      <ul>
+        <li>400gr de papa</li>
+        <li>75 gr de cebolla</li>
+        <li>3 huevos</li>
+        <li>30ml de aceite</li>
+        <li>Sal y pimienta al gusto</li>
+      </ul>
+      
+      <p>Porciones: 4pax.</p> 
+
+      <p>Pela las papas y córtelas en cubos (intente que queden parejos). Fríalos en abundante aceite caliente por 5 minutos y reservelos en una fuente con papel absorvente. En un bol coloque los huevos batidos, las papas, la cebolla, la sal y la pimienta.</p>
+
+      <p>Caliente a fuego fuerte la sartén donde va a cocinar la tortilla, ponga un poco de aceite y luego vierta la preparación. Cocine 10 minutos hasta que el huevo se cocine bien, dele vuelta y cocinele el mismo tiempo del otro lado.</p>
+
+      <p>Coloquela en una fuente y sírvala.</p>
+      </div>
+
+    </div>
+
+      <div class="receta-calc"> 
+
+        <h2>Calcule su receta</h2>
+
+        <form>
+        <label for="huevos">Huevos:</label><br>
+        <input type="number" id="huevos" class="Ingredienes" placeholder="Cantidad (unidades)" step="1">
+        <br>
+        <label for="papa">Papa:</label><br>
+        <input type="number" id="papa" class="Ingredienes" placeholder="Cantidad (en gramos)" step="0.1">
+        <br>
+        <label for="cebolla">Cebolla:</label><br>
+        <input type="number" id="cebolla" class="Ingredienes" placeholder="Cantidad (en gramos)" step="0.1">
+        <br>
+        <label for="sarten">Número de Sartenes:</label><br>
+        <input type="number" id="sarten" class="Ingredienes" placeholder="Cantidad de sartenes" step="0.1">
+        <br>
+        <input type="button" id="tortilla" class="btn"  value="Calcular" onclick="receta()">
+        <input type="button" id="btn6" class="btn"  value="Reset" onclick="location.reload()">
+        </form>
+
+        
+      <p id="cant_torti"></p>
+      <p id="cant_aceite"></p>
+      <p id="tiempo"></p>
+      <p id="mensaje"></p>
+
+      </div>
+
+    </div class="receta-columns">
+
+  </section>
+
+        <footer class="footer"> 
+                <p class="copyright">Juan Bohórquez. 2019 &copy; </p>
+        </footer>
+
+        <script type="text/javascript" src="js/portfolio.js"></script>
+</body>
+</html>
